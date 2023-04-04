@@ -1,0 +1,40 @@
+.AudioPlayer{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  padding: 1rem 2rem;
+  box-shadow: 0px -12px 15px -3px rgba(0,0,0,0.1);
+}
+
+.Controls{
+  display: flex;
+}
+
+.TrackInfo{
+  display: flex;
+  p{
+    margin-right: 2rem;
+    span {
+      padding-left: 0.5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.ProgressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  input[type="range"] {
+      --range-progress: 0%;
+      &::before{
+        background: #f50;
+        width: var(--range-progress);
+      }
+    }
+}

@@ -1,0 +1,29 @@
+.Pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+.PaginationItem{
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.PaginationItemActive{
+    pointer-events: none;
+    font-weight: bold;
+    cursor: default;
+}

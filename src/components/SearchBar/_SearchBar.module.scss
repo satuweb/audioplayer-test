@@ -1,0 +1,15 @@
+.SearchBar{
+    display: block;
+    position: relative;
+    .Close{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+
